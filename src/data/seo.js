@@ -2,36 +2,30 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Soy desarrollador de software con especialización en ciberseguridad, enfocado en crear aplicaciones robustas y seguras. Con experiencia en lenguajes como Java y Python, busco combinar funcionalidad y protección en cada proyecto, ofreciendo soluciones efectivas y orientadas al usuario.",
+		keywords: ["Pablo", "Pablo M"],
 	},
 
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Soy ingeniero en informática con un enfoque en el desarrollo de software y la ciberseguridad. A través de mi experiencia en proyectos diversos, he adquirido un sólido dominio de lenguajes como Java y Python, así como de frameworks modernos y prácticas de seguridad. Mi objetivo es diseñar aplicaciones eficientes y seguras que mejoren la experiencia del usuario, siempre buscando estar a la vanguardia en tecnología e innovación.",
+			keywords: ["Pablo", "Pablo M"],
 	},
 
-	{
-		page: "articles",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
-	},
 
 	{
 		page: "projects",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"A lo largo de mi trayectoria en desarrollo de software y ciberseguridad, he trabajado en diversos proyectos que abarcan desde aplicaciones web y móviles hasta herramientas de análisis de seguridad. Cada proyecto ha sido una oportunidad para aplicar conocimientos en tecnologías como Java, Python, y frameworks de desarrollo, así como para profundizar en prácticas de seguridad informática. Aquí encontrarás una selección de estos proyectos, los cuales muestran mis habilidades en programación.",
+			keywords: ["Pablo", "Pablo M"],
 	},
 
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"¡Gracias por visitar mi portfolio! Si tienes alguna pregunta, comentario o simplemente quieres charlar sobre un proyecto, no dudes en contactarme. Puedes hacerlo directamente a través de mi correo electrónico:   pa.mrgom@gmail.com. ¡Espero saber de ti pronto!",
+			keywords: ["Pablo", "Pablo M"],
 	},
 ];
 

@@ -39,21 +39,21 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							Things I’ve made trying to put my dent in the
-							universe.
+							Proyectos que he realizado
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							I've worked on a variety of projects over the years
-							and I'm proud of the progress I've made. Many of
-							these projects are open-source and available for
-							others to explore and contribute to. If you're
-							interested in any of the projects I've worked on,
-							please feel free to check out the code and suggest
-							any improvements or enhancements you might have in
-							mind. Collaborating with others is a great way to
-							learn and grow, and I'm always open to new ideas and
-							feedback.
+							A lo largo de mi trayectoria en desarrollo de
+							software y ciberseguridad, he trabajado en diversos
+							proyectos que abarcan desde aplicaciones web y
+							móviles hasta herramientas de análisis de seguridad.
+							Cada proyecto ha sido una oportunidad para aplicar
+							conocimientos en tecnologías como Java, Python, y
+							frameworks de desarrollo, así como para profundizar
+							en prácticas de seguridad informática. 
+							
+							Aquí encontrarás una selección de estos proyectos, los
+							cuales muestran mis habilidades en programación.
 						</div>
 
 						<div className="projects-list">
