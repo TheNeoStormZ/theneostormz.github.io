@@ -23,7 +23,7 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Encuentrame en GitHub</div>
+					<div className="social-text">Proyectos completos en GitHub</div>
 				</a>
 			</div>
 
@@ -39,7 +39,7 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Perfil en LinkedIn</div>
+					<div className="social-text">Mi perfil profesional en LinkedIn</div>
 				</a>
 			</div>
 

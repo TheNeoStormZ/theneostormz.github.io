@@ -5,6 +5,7 @@ import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
+	faLinkedin,
 	faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -130,6 +131,17 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
+
+							<a
+								href={INFO.socials.linkedin}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faLinkedin}
+									className="homepage-social-icon"
+								/>
+							</a>
 							<a
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
@@ -146,8 +158,8 @@ const Homepage = () => {
 							<AllProjects />
 						</div>
 						<div className="homepage-studies">
-								<Studies />
-							</div>
+							<Studies />
+						</div>
 						<div className="page-footer">
 							<Footer />
 						</div>

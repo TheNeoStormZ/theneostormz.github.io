@@ -35,13 +35,23 @@ const INFO = {
 
 	projects: [
 
+
+		{
+			title: "Proyecto en Expo Framework",
+			description:
+				"Desarrollo de aplicación móvil usando Expo Framework y React Native.",
+			logo: "https://cdn.worldvectorlogo.com/logos/expo-1.svg",				
+			linkText: "Repositorio privado",
+			link: "#",
+		},
+
 		{
 			title: "Quipu",
 			description:
 				"Quipu es una plataforma que ayuda a escritores a organizar y relacionar personajes e historias, mejorando su productividad a través de una interfaz intuitiva.",
 			logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg",				
 			linkText: "Ver en GitHub",
-			link: "https://github.com",
+			link: "https://github.com/TheNeoStormZ/quipu-writer",
 		},
 
 		{
@@ -67,8 +77,8 @@ const INFO = {
 			description:
 				"Desarrollo de plataforma web para venta de accesorios móviles de diversas marcas, desde fundas hasta cascos VR.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png",
-			linkText: "Ver en GitHub",
-			link: "https://github.com/TheNeoStormZ/Phonetic_PGPI",
+			linkText: "Repositorio privado",
+			link: "#",
 		},
 
 		{
