@@ -24,8 +24,13 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-      - name: Build project
-        run: npm run build
+
+      # Added a GitHub Identity and Remote URL
+      - name: Configure Git User and Remote URL
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions Bot"
+          git remote set-url origin git@github.com:${{ github.repository }}.git
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
