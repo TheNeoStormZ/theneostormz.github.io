@@ -25,12 +25,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Added a GitHub Identity and Remote URL (HTTPS)
-      - name: Configure Git User and Remote URL
+      
+      - name: Configure Git remote with token
         run: |
           git config user.email "${{ github.actor }}"
           git config user.name "GitHub Actions Bot"
-          git remote set-url origin https://github.com/${{ github.repository }}.git
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
+      
       - name: Deploy to GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
