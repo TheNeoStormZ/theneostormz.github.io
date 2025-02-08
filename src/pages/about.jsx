@@ -12,6 +12,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
+import Works from "../components/homepage/work";
 
 const About = () => {
 	useEffect(() => {
@@ -49,6 +50,10 @@ const About = () => {
 
 								<div className="subtitle about-subtitle">
 									{INFO.about.description}
+								</div>
+
+								<div className="homepage-work">
+									<Works />
 								</div>
 
 								<div className="homepage-studies">

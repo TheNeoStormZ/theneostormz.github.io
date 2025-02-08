@@ -3,7 +3,11 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../common/card";
 
+import INFO from "../../data/user";
+
 import "./styles/studies.css";
+
+const studies = INFO?.studies;
 
 const Studies = () => {
 	return (
@@ -13,30 +17,23 @@ const Studies = () => {
 				title="Estudios"
 				body={
 					<div className="studies-body">
-												<div className="study">
+						{studies && studies.map(
+							(study,id) => (
+								<div className="study">
 							<img
-								src="./kschool-logo.png"
-								alt="kschool"
+								height={30}
+								src={study.logo}
+								alt={`${id}-study`}
 								className="study-image"
 							/>
-							<div className="study-title">Máster Hácking Ético</div>
+							<div className="study-title">{study.title}</div>
 							<div className="study-subtitle">
-							KSchool
+							{study.institution}
 							</div>
-							<div className="study-duration">Noviembre 2023 - Julio 2024</div>
+							<div className="study-duration">{study.timeframe}</div>
 						</div>
-						<div className="study">
-							<img
-								src="./us-logo.png"
-								alt="us"
-								className="study-image"
-							/>
-							<div className="study-title">Ingeniería Informatica - Ingeniería del Software</div>
-							<div className="study-subtitle">
-							Universidad de Sevilla
-							</div>
-							<div className="study-duration">Septiembre 2019 - Julio 2023</div>
-						</div>
+							)
+						)}
 					</div>
 				}
 			/>

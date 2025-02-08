@@ -26,10 +26,29 @@ const INFO = {
 
 	studies: [
 		{
+			title: "Máster Hácking Ético",
+			institution:
+				"KSchool",
+			timeframe: "Noviembre 2023 - Julio 2024",
+			logo: "./kschool-logo.png",			
+		},
+		{
 			title: "Ingeniería Informatica - Ingeniería del Software",
+			institution:
+				"Universidad de Sevilla",
+			timeframe: "Septiembre 2019 - Julio 2023",
+			logo: "./us-logo.png",			
+		},
+	],
+
+	work: [
+		{
+			title: "Atlansec",
 			description:
-				"Universidad de Sevilla | Septiembre 2019 - Julio 2023",
-			logo: "https://www.uco.es/investigacion/proyectos/SEBASENet/images/Logo_US.png",			
+				"Autónomo",
+			timeframe: "Enero 2025 - Actualidad",
+			url: "https://es.linkedin.com/company/atlansecsl",
+			logo: "./atlansecsl_logo.jpg",			
 		},
 	],
 

@@ -13,8 +13,10 @@
 
 .project:hover {
 	background: #fafafa;
-	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
+	transition: all 0.3s ease;
+	background-color: #f5f5f5; 
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+	transform: translateY(-1px);
 }
 
 .project:hover .project-link {

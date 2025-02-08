@@ -19,6 +19,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/homepage.css";
+import Works from "../components/homepage/work";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -157,9 +158,13 @@ const Homepage = () => {
 						<div className="homepage-projects">
 							<AllProjects />
 						</div>
+						<div className="homepage-work">
+							<Works />
+						</div>
 						<div className="homepage-studies">
 							<Studies />
 						</div>
+
 						<div className="page-footer">
 							<Footer />
 						</div>
