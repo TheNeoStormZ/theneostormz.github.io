@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/contact.css";
+import MailtoLink from "../components/mailto.tsx";
 
 const Contact = () => {
 	useEffect(() => {
@@ -46,10 +47,10 @@ const Contact = () => {
 						<div className="subtitle contact-subtitle">
 						¡Gracias por visitar mi portfolio! Si tienes alguna pregunta, comentario o simplemente quieres charlar sobre un proyecto, no dudes en contactarme. Puedes hacerlo directamente a través de mi correo electrónico:
 							&nbsp;{" "}
-							<a href={`mailto:${INFO.main.email}`}>
-								{INFO.main.email}
-							</a>
-							. ¡Espero saber de ti pronto!
+							<MailtoLink/>
+						</div>
+						<div className="subtitle contact-subtitle">
+						¡Espero saber de ti pronto!
 						</div>
 					</div>
 
