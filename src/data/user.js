@@ -46,7 +46,7 @@ const INFO = {
 			title: "Atlansec",
 			description:
 				"Autónomo | Front-End Developer",
-			timeframe: "Enero - Febrero 2025",
+			timeframe: "Diciembre 2024 - Febrero 2025",
 			url: "https://es.linkedin.com/company/atlansecsl",
 			logo: "./atlansecsl_logo.jpg",			
 		},
@@ -65,6 +65,15 @@ const INFO = {
 		},
 
 		{
+			title: "Statuere",
+			description:
+				"Statuere es una aplicación ToDo que permite añadir tareas con un nombre y una descripción, marcarlas como completadas (lo que las diferencia visualmente del resto) y eliminarlas.",
+			logo: "https://cdn.worldvectorlogo.com/logos/next-js.svg",				
+			linkText: "Ver en GitHub",
+			link: "https://github.com/TheNeoStormZ/Statuere",
+		},
+
+		{
 			title: "Quipu",
 			description:
 				"Quipu es una plataforma que ayuda a escritores a organizar y relacionar personajes e historias, mejorando su productividad a través de una interfaz intuitiva.",
@@ -77,7 +86,7 @@ const INFO = {
 			title: "BirdVerify",
 			description:
 				"BirdVerify es una aplicación nativa para verificar si un usuario de Twitter estaba previamente verificado, usando una base de datos SQLite con datos hasta el 11 de diciembre de 2022.",
-			logo: "https://cdn.worldvectorlogo.com/logos/android-6.svg",
+			logo: "https://cdn.worldvectorlogo.com/logos/android-logomark.svg",
 			linkText: "Ver en GitHub",
 			link: "https://github.com/TheNeoStormZ/BirdVerify",
 		},
@@ -90,12 +99,20 @@ const INFO = {
 			linkText: "Ver en GitHub",
 			link: "https://github.com/ispp-FoodCheck/FoodCheck",
 		},
+		{
+			title: "SpringElectric",
+			description:
+				"Proyecto de aprendizaje para explorar tecnologías NoSQL, centrado en MongoDB, y usando Spring Boot para la gestión de datos eléctrico. Implementa funcionalidades de carga de datos CSV.",
+			logo: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1-1.svg",
+			linkText: "Ver en GitHub",
+			link: "https://github.com/TheNeoStormZ/SpringElectric",
+		},
 
 		{
 			title: "Phonetic",
 			description:
 				"Desarrollo de plataforma web para venta de accesorios móviles de diversas marcas, desde fundas hasta cascos VR.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png",
+			logo: "https://cdn.worldvectorlogo.com/logos/django.svg",
 			linkText: "Repositorio privado",
 			link: "#",
 		},
@@ -104,7 +121,7 @@ const INFO = {
 			title: "Plegamiento 2D - Un enfoque informatico",
 			description:
 				"Proyecto colaborativo donde se investigó acerca de la predicción del plegamiento de proteinas y se realizó una implementación basica en Python.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png",
+			logo: "https://cdn.worldvectorlogo.com/logos/matplotlib-1.svg",
 			linkText: "Ver en GitHub",
 			link: "https://github.com/TheNeoStormZ/Proteinas-2D",
 		},
@@ -113,25 +130,35 @@ const INFO = {
 			title: "Project REMORY",
 			description:
 				"Proyecto grupal de elicitación de requisitos de una asesoria, donde se realizó tanto un Analisis del Sistema como la obtencion de los Requisitos del Sistema.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/html/html.png",
+			logo: "./us-logo.png",
 			linkText: "Ver en GitHub",
 			link: "https://github.com/TheNeoStormZ/super-REMORY",
 		},
 
-				{
+		{
+			title: "Decide",
+			description:
+				"Este proyecto colaborativo involucró a varios grupos en diversas tareas para un proyecto externo. Mi rol comprendió la adaptación de la interfaz para su traducción, la traducción al español y la configuración de Docker, el despliegue en Render y las Github Actions apropiadas.",
+			logo: "https://cdn.worldvectorlogo.com/logos/docker-4.svg",
+			linkText: "Ver en GitHub",
+			link: "https://github.com/Villanueva-del-Trabuco-EGC/decide",
+		},
+
+		{
 			title: "Dwarf",
 			description:
 				"Implementación del juego de mesa Dwarf a una plataforma web desarrollada con Spring Framework, usando Java como lenguaje de programación. Proyecto colaborativo.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/java/java.png",
+			logo: "https://cdn.worldvectorlogo.com/logos/spring-3.svg",
 			linkText: "Ver en GitHub",
 			link: "https://github.com/gii-is-DP1/dp1-2021-2022-l8-5",
 		},
+
 
 		{
 			title: "Showcase",
 			description:
 				"Implementación de funciones básicas de redes sociales fotográficas, usando Python, MariaDB y el framework Silence de la Universidad de Sevilla.",
-				logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png",
+				logo: "https://avatars.githubusercontent.com/u/45563345?s=200&v=4",
 				linkText: "Ver en GitHub",
 			link: "https://github.com/TheNeoStormZ/Proyecto-curso-IISSI2",
 		},

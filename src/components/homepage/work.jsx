@@ -30,7 +30,7 @@ const Works = () => {
 							<div className="work-subtitle">
 							{work.description}
 							</div>
-							<div className="work-duration">{work.timeframe}</div>
+							<div className="work-duration" style={{paddingLeft: 45}}>{work.timeframe}</div>
 						</div>
 							)
 						)}
