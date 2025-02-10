@@ -45,8 +45,8 @@ const INFO = {
 		{
 			title: "Atlansec",
 			description:
-				"Autónomo",
-			timeframe: "Enero 2025 - Actualidad",
+				"Autónomo | Front-End Developer",
+			timeframe: "Enero - Febrero 2025",
 			url: "https://es.linkedin.com/company/atlansecsl",
 			logo: "./atlansecsl_logo.jpg",			
 		},
