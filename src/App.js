@@ -12,7 +12,6 @@ import "./app.css";
 import { TRACKING_ID } from "./data/tracking";
 
 import LanguageContext from "./LanguageContext";
-import LanguageSwitcher from "./components/LanguageSwitcher";
 
 
 function App() {
@@ -50,7 +49,6 @@ function App() {
 	return (
 		<LanguageContext.Provider value={languageContextValue}> 
 			<div className="App">
-                <LanguageSwitcher /> 
 				<Routes>
 					<Route path="/" element={<Homepage />} />
 					<Route path="/about" element={<About />} />

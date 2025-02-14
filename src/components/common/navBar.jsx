@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 
 import "./styles/navBar.css";
-
+import LanguageSwitcher from "../../components/LanguageSwitcher"; 
 import LanguageContext from "../../LanguageContext";
 import translations from "../../data/translations";
 
@@ -14,8 +14,8 @@ const NavBar = (props) => {
 	const [INFO, setINFO] = useState(translations[language]);
 
 	useEffect(() => {
-		setINFO(translations[language]); 
-	}, [language]); 
+		setINFO(translations[language]);
+	}, [language]);
 
 	return (
 		<React.Fragment>
@@ -58,6 +58,9 @@ const NavBar = (props) => {
 								}
 							>
 								<Link to="/contact">{INFO.nav_bar.contact}</Link>
+							</li>
+							<li className="nav-item language-switcher-item"> 
+								<LanguageSwitcher />
 							</li>
 						</ul>
 					</div>
