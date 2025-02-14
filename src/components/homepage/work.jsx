@@ -1,23 +1,34 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../common/card";
 
-import INFO from "../../data/user";
-
 import "./styles/work.css";
 
-const work = INFO?.work;
+
+import LanguageContext from "../../LanguageContext";
+import translations from "../../data/translations";
+
 
 const Works = () => {
+	
+	const { language } = useContext(LanguageContext);
+
+	const [INFO, setINFO] = useState(translations[language]);
+
+
+		useEffect(() => {
+			setINFO(translations[language]); 
+		}, [language]); 
+
 	return (
 		<div className="work-list">
 			<Card
 				icon={faBriefcase}
-				title="Trabajos"
+				title={INFO.card_headers.works}
 				body={
 					<div className="work-body">
-						{work && work.map(
+						{INFO.work && INFO.work.map(
 							(work,id) => (
 							<div className="work" onClick={() => window.open(work.url, '_blank')}>
 							<img

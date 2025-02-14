@@ -1,12 +1,21 @@
-import React from "react";
-
+import React, { useState, useEffect, useContext } from "react";
 import Project from "./project";
-
-import INFO from "../../data/user";
 
 import "./styles/allProjects.css";
 
+import LanguageContext from "../../LanguageContext";
+import translations from "../../data/translations";
+
+
 const AllProjects = () => {
+	const { language } = useContext(LanguageContext);
+
+	const [INFO, setINFO] = useState(translations[language]);
+
+	useEffect(() => {
+		setINFO(translations[language]); 
+	}, [language]); 
+
 	return (
 		<div className="all-projects-container">
 			{INFO.projects.map((project, index) => (

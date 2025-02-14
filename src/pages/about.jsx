@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
@@ -8,16 +8,26 @@ import Socials from "../components/about/socials";
 
 import Studies from "../components/homepage/studies";
 
-import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
 import Works from "../components/homepage/work";
 
+import LanguageContext from "../LanguageContext";
+import translations from "../data/translations";
+
 const About = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+	
+	const { language } = useContext(LanguageContext);
+
+	const [INFO, setINFO] = useState(translations[language]);
+
+	useEffect(() => {
+		setINFO(translations[language]); 
+	}, [language]); 
 
 	const currentSEO = SEO.find((item) => item.page === "about");
 

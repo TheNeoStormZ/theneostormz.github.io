@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Helmet } from "react-helmet";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
@@ -15,8 +15,10 @@ import NavBar from "../components/common/navBar";
 import Studies from "../components/homepage/studies";
 import AllProjects from "../components/projects/allProjects";
 
-import INFO from "../data/user";
 import SEO from "../data/seo";
+
+import LanguageContext from "../LanguageContext";
+import translations from "../data/translations";
 
 import "./styles/homepage.css";
 import Works from "../components/homepage/work";
@@ -26,6 +28,14 @@ const Homepage = () => {
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
 
+	const { language } = useContext(LanguageContext);
+
+	const [INFO, setINFO] = useState(translations[language]);
+
+	useEffect(() => {
+		setINFO(translations[language]); 
+	}, [language]); 
+	
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);

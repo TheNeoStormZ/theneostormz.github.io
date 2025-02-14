@@ -1,4 +1,23 @@
 const INFO = {
+
+	nav_bar: {
+		home: "Inicio",
+		about:"Acerca de mi",
+		projects:"Proyectos",
+		contact:"Contacto",
+		based_on: "Basado en © 2023 Tharindu.dev. Todos los derechos reservados."
+	},
+
+	card_headers: {
+		works: "Trabajos",
+		studies: "Estudios",
+	},
+
+	socials_content: {
+		github: "Proyectos completos en GitHub",
+		linkedin: "Mi perfil profesional en LinkedIn"
+	},
+
 	main: {
 		title: "Pablo Marín Gómez - Portfolio",
 		name: "Pablo Marín Gómez",
@@ -51,6 +70,18 @@ const INFO = {
 			logo: "./atlansecsl_logo.jpg",			
 		},
 	],
+
+	contact_header: {
+		header: "Ponte en contacto conmigo",
+		line_one:"¡Gracias por visitar mi portfolio! Si tienes alguna pregunta, comentario o simplemente quieres charlar sobre un proyecto, no dudes en contactarme. Puedes hacerlo directamente a través de mi correo electrónico:",
+		line_two:"¡Espero saber de ti pronto!"
+	},
+
+
+	projects_header: {
+		header: "Proyectos que he realizado",
+		description:"A lo largo de mi trayectoria en desarrollo de software y ciberseguridad, he trabajado en diversos proyectos que abarcan desde aplicaciones web y móviles hasta herramientas de análisis de seguridad. Cada proyecto ha sido una oportunidad para aplicar conocimientos en tecnologías como Java, Python, y frameworks de desarrollo, así como para profundizar en prácticas de seguridad informática. Aquí encontrarás una selección de estos proyectos, los cuales muestran mis habilidades en programación."
+	},
 
 	projects: [
 

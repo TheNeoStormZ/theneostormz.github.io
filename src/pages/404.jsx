@@ -6,7 +6,7 @@ import { faFaceSadTear } from "@fortawesome/free-regular-svg-icons";
 import NavBar from "../components/common/navBar";
 import Logo from "../components/common/logo";
 
-import INFO from "../data/user";
+import INFO from "../data/user_es";
 
 import "./styles/404.css";
 

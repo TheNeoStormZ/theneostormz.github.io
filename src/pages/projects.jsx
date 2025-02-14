@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
@@ -6,15 +6,24 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
 
-import INFO from "../data/user";
+
 import SEO from "../data/seo";
 
 import "./styles/projects.css";
+import LanguageContext from "../LanguageContext";
+import translations from "../data/translations";
 
 const Projects = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+	const { language } = useContext(LanguageContext);
+
+	const [INFO, setINFO] = useState(translations[language]);
+
+	useEffect(() => {
+		setINFO(translations[language]); 
+	}, [language]); 
 
 	const currentSEO = SEO.find((item) => item.page === "projects");
 
@@ -39,21 +48,11 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							Proyectos que he realizado
+							{INFO.projects_header.header}
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							A lo largo de mi trayectoria en desarrollo de
-							software y ciberseguridad, he trabajado en diversos
-							proyectos que abarcan desde aplicaciones web y
-							móviles hasta herramientas de análisis de seguridad.
-							Cada proyecto ha sido una oportunidad para aplicar
-							conocimientos en tecnologías como Java, Python, y
-							frameworks de desarrollo, así como para profundizar
-							en prácticas de seguridad informática. 
-							
-							Aquí encontrarás una selección de estos proyectos, los
-							cuales muestran mis habilidades en programación.
+						{INFO.projects_header.description}
 						</div>
 
 						<div className="projects-list">

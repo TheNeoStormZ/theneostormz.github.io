@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -6,11 +6,22 @@ import {
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-import INFO from "../../data/user";
 
 import "./styles/socials.css";
 
+import LanguageContext from "../../LanguageContext";
+import translations from "../../data/translations";
+
+
 const Socials = () => {
+	const { language } = useContext(LanguageContext);
+
+	const [INFO, setINFO] = useState(translations[language]);
+
+	useEffect(() => {
+		setINFO(translations[language]); 
+	}, [language]); 
+
 	return (
 		<div className="socials">
 
@@ -23,7 +34,7 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Proyectos completos en GitHub</div>
+					<div className="social-text">{INFO.socials_content.github}</div>
 				</a>
 			</div>
 
@@ -39,7 +50,7 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Mi perfil profesional en LinkedIn</div>
+					<div className="social-text">{INFO.socials_content.linkedin}</div>
 				</a>
 			</div>
 

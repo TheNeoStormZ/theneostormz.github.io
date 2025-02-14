@@ -1,23 +1,35 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../common/card";
 
-import INFO from "../../data/user";
-
 import "./styles/studies.css";
 
-const studies = INFO?.studies;
+import LanguageContext from "../../LanguageContext";
+import translations from "../../data/translations";
+
+
 
 const Studies = () => {
+
+	const { language } = useContext(LanguageContext);
+
+	const [INFO, setINFO] = useState(translations[language]);
+
+
+		useEffect(() => {
+			setINFO(translations[language]); 
+		}, [language]); 
+
+
 	return (
 		<div className="studies">
 			<Card
 				icon={faGraduationCap}
-				title="Estudios"
+				title={INFO.card_headers.studies}
 				body={
 					<div className="studies-body">
-						{studies && studies.map(
+						{INFO.studies && INFO.studies.map(
 							(study,id) => (
 								<div className="study">
 							<img

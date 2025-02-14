@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
@@ -6,16 +6,26 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
 
-import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/contact.css";
 import MailtoLink from "../components/mailto.tsx";
 
+import LanguageContext from "../LanguageContext";
+import translations from "../data/translations";
+
 const Contact = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+	const { language } = useContext(LanguageContext);
+
+	const [INFO, setINFO] = useState(translations[language]);
+
+	useEffect(() => {
+		setINFO(translations[language]); 
+	}, [language]); 
 
 	const currentSEO = SEO.find((item) => item.page === "contact");
 
@@ -41,16 +51,16 @@ const Contact = () => {
 
 					<div className="contact-container">
 						<div className="title contact-title">
-							Ponte en contacto conmigo
+							{INFO.contact_header.header}
 						</div>
 
 						<div className="subtitle contact-subtitle">
-						¡Gracias por visitar mi portfolio! Si tienes alguna pregunta, comentario o simplemente quieres charlar sobre un proyecto, no dudes en contactarme. Puedes hacerlo directamente a través de mi correo electrónico:
+						{INFO.contact_header.line_one}
 							&nbsp;{" "}
 							<MailtoLink/>
 						</div>
 						<div className="subtitle contact-subtitle">
-						¡Espero saber de ti pronto!
+						{INFO.contact_header.line_two}
 						</div>
 					</div>
 
