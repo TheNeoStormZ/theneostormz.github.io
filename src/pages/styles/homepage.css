@@ -99,6 +99,7 @@
 	}
 
 	.homepage-first-area-left-side {
+		padding-top: 60px;
 		display: flex;
 		flex-direction: column; /* Changed: set direction to column */
 		align-items: flex-start;
@@ -124,8 +125,7 @@
 	}
 
 	.homepage-image-container {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-bottom: 50px !important;
 		margin-left: 10px;
 		order: 1;
 	}

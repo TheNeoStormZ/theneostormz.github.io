@@ -31,7 +31,8 @@ const INFO = {
         stackoverflow: "https://stackoverflow.com/users/15750198/theneostormz",
     },
     homepage: {
-        title: "Software Developer, specialized in Cybersecurity",
+        title: "Software Developer, specialized in",
+        rotating: ['Cybersecurity', 'Python', 'Java', 'React'],
         description:
             "I am a software developer specializing in cybersecurity, focused on creating robust and secure applications. With experience in languages like Java and Python, I aim to combine functionality and protection in every project, offering effective and user-oriented solutions.",
     },
@@ -60,7 +61,7 @@ const INFO = {
         {
             title: "Atlansec",
             description:
-                "Freelance | Front-End Developer",
+                "Front-End Developer",
             timeframe: "December 2024 - February 2025",
             url: "https://es.linkedin.com/company/atlansecsl",
             logo: "./atlansecsl_logo.jpg",

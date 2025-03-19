@@ -14,6 +14,8 @@ import MailtoLink from "../components/mailto.tsx";
 import LanguageContext from "../LanguageContext";
 import translations from "../data/translations";
 
+import GlitchText from "../components/animated/GlitchText/GlitchText.jsx";
+
 const Contact = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -24,8 +26,8 @@ const Contact = () => {
 	const [INFO, setINFO] = useState(translations[language]);
 
 	useEffect(() => {
-		setINFO(translations[language]); 
-	}, [language]); 
+		setINFO(translations[language]);
+	}, [language]);
 
 	const currentSEO = SEO.find((item) => item.page === "contact");
 
@@ -51,16 +53,22 @@ const Contact = () => {
 
 					<div className="contact-container">
 						<div className="title contact-title">
-							{INFO.contact_header.header}
+							<GlitchText
+								speed={1}
+								enableShadows={true}
+								enableOnHover={false}
+								className="custom-class"
+							>
+								{INFO.contact_header.header}
+							</GlitchText>
 						</div>
 
 						<div className="subtitle contact-subtitle">
-						{INFO.contact_header.line_one}
-							&nbsp;{" "}
-							<MailtoLink/>
+							{INFO.contact_header.line_one}
+							&nbsp; <MailtoLink />
 						</div>
 						<div className="subtitle contact-subtitle">
-						{INFO.contact_header.line_two}
+							{INFO.contact_header.line_two}
 						</div>
 					</div>
 

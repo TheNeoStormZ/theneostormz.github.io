@@ -23,6 +23,10 @@ import translations from "../data/translations";
 import "./styles/homepage.css";
 import Works from "../components/homepage/work";
 
+import RotatingText from "../components/animated/RotatingText/RotatingText.jsx";
+import SplitText from "../components/animated/SplitText/SplitText.jsx";
+import DecryptedText from "../components/animated/DecryptedText/DecryptedText.jsx";
+
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
@@ -33,9 +37,9 @@ const Homepage = () => {
 	const [INFO, setINFO] = useState(translations[language]);
 
 	useEffect(() => {
-		setINFO(translations[language]); 
-	}, [language]); 
-	
+		setINFO(translations[language]);
+	}, [language]);
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -100,11 +104,51 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
-									{INFO.homepage.title}
+									<SplitText
+										text={INFO.homepage.title}
+										className="text-2xl font-semibold text-center"
+										delay={15}
+										animationFrom={{
+											opacity: 0,
+											transform: "translate3d(0,50px,0)",
+										}}
+										animationTo={{
+											opacity: 1,
+											transform: "translate3d(0,0,0)",
+										}}
+										easing="easeOutCubic"
+										threshold={0.2}
+										rootMargin="-50px"
+									/>
+
+									<RotatingText
+										texts={INFO.homepage.rotating}
+										mainClassName="text-black overflow-hidden"
+										staggerFrom={"last"}
+										initial={{ y: "100%" }}
+										animate={{ y: 0 }}
+										exit={{ y: "-120%" }}
+										staggerDuration={0.025}
+										splitLevelClassName="overflow-hidden"
+										transition={{
+											type: "spring",
+											damping: 30,
+											stiffness: 400,
+										}}
+										rotationInterval={2000}
+									/>
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
+									<DecryptedText
+										text={INFO.homepage.description}
+										speed={120}
+										maxIterations={20}
+										parentClassName="all-letters"
+										encryptedClassName="encrypted"
+										animateOn="view"
+										revealDirection="center"
+									/>
 								</div>
 							</div>
 

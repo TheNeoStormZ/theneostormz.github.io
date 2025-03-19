@@ -16,18 +16,21 @@ import Works from "../components/homepage/work";
 import LanguageContext from "../LanguageContext";
 import translations from "../data/translations";
 
+import BlurText from "../components/animated/BlurText/BlurText";
+import DecryptedText from "../components/animated/DecryptedText/DecryptedText";
+
 const About = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-	
+
 	const { language } = useContext(LanguageContext);
 
 	const [INFO, setINFO] = useState(translations[language]);
 
 	useEffect(() => {
-		setINFO(translations[language]); 
-	}, [language]); 
+		setINFO(translations[language]);
+	}, [language]);
 
 	const currentSEO = SEO.find((item) => item.page === "about");
 
@@ -55,11 +58,25 @@ const About = () => {
 						<div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title">
-									{INFO.about.title}
+									<BlurText
+										text={INFO.about.title}
+										delay={150}
+										animateBy="words"
+										direction="top"
+										className="text-2xl mb-8"
+									/>
 								</div>
 
 								<div className="subtitle about-subtitle">
-									{INFO.about.description}
+								<DecryptedText
+										text={INFO.about.description}
+										speed={120}
+										maxIterations={20}
+										parentClassName="all-letters"
+										encryptedClassName="encrypted"
+										animateOn="view"
+										revealDirection="center"
+									/>	
 								</div>
 
 								<div className="homepage-work">

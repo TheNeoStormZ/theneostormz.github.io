@@ -32,7 +32,8 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Desarrollador de software, especializado en ciberseguridad",
+		title: "Desarrollador de software, especializado en",
+		rotating: ['Ciberseguridad', 'Python', 'Java', 'React'],
 		description:
 			"Soy desarrollador de software con especialización en ciberseguridad, enfocado en crear aplicaciones robustas y seguras. Con experiencia en lenguajes como Java y Python, busco combinar funcionalidad y protección en cada proyecto, ofreciendo soluciones efectivas y orientadas al usuario.",
 	},
@@ -64,7 +65,7 @@ const INFO = {
 		{
 			title: "Atlansec",
 			description:
-				"Autónomo | Front-End Developer",
+				"Front-End Developer",
 			timeframe: "Diciembre 2024 - Febrero 2025",
 			url: "https://es.linkedin.com/company/atlansecsl",
 			logo: "./atlansecsl_logo.jpg",			

@@ -6,12 +6,14 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
 
-
 import SEO from "../data/seo";
 
 import "./styles/projects.css";
 import LanguageContext from "../LanguageContext";
 import translations from "../data/translations";
+
+import GradientText from "../components/animated/GradientText/GradientText";
+import DecryptedText from "../components/animated/DecryptedText/DecryptedText";
 
 const Projects = () => {
 	useEffect(() => {
@@ -22,8 +24,8 @@ const Projects = () => {
 	const [INFO, setINFO] = useState(translations[language]);
 
 	useEffect(() => {
-		setINFO(translations[language]); 
-	}, [language]); 
+		setINFO(translations[language]);
+	}, [language]);
 
 	const currentSEO = SEO.find((item) => item.page === "projects");
 
@@ -48,11 +50,33 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							{INFO.projects_header.header}
+							<GradientText
+								colors={[
+									"#40ffaa",
+									"#4079ff",
+									"#40ffaa",
+									"#4079ff",
+									"#40ffaa",
+								]}
+								animationSpeed={3}
+								showBorder={false}
+								className="custom-class"
+							>
+								{INFO.projects_header.header}
+							</GradientText>
 						</div>
 
 						<div className="subtitle projects-subtitle">
-						{INFO.projects_header.description}
+						<DecryptedText
+										text={INFO.projects_header.description}
+										speed={120}
+										maxIterations={20}
+										parentClassName="all-letters"
+										encryptedClassName="encrypted"
+										animateOn="view"
+										revealDirection="center"
+									/>	
+							
 						</div>
 
 						<div className="projects-list">
