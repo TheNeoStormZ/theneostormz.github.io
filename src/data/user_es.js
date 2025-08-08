@@ -62,6 +62,15 @@ const INFO = {
 	],
 
 	work: [
+				{
+			title: "Minsait",
+			description:
+				"Software Engineer 2",
+			timeframe: "Junio 2025 - Actualidad",
+			url: "https://www.linkedin.com/company/minsait",
+			logo: "./minsait_logo.jpeg",			
+		},
+		
 		{
 			title: "Atlansec",
 			description:
@@ -69,7 +78,7 @@ const INFO = {
 			timeframe: "Diciembre 2024 - Febrero 2025",
 			url: "https://es.linkedin.com/company/atlansecsl",
 			logo: "./atlansecsl_logo.jpg",			
-		},
+		}
 	],
 
 	contact_header: {

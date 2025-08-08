@@ -59,13 +59,21 @@ const INFO = {
     ],
     work: [
         {
+			title: "Minsait",
+			description:
+				"Software Engineer 2",
+			timeframe: "June 2025 - Today",
+			url: "https://www.linkedin.com/company/minsait",
+			logo: "./minsait_logo.jpeg",			
+		},
+        {
             title: "Atlansec",
             description:
                 "Front-End Developer",
             timeframe: "December 2024 - February 2025",
             url: "https://es.linkedin.com/company/atlansecsl",
             logo: "./atlansecsl_logo.jpg",
-        },
+        }
     ],
     
     contact_header: {
