@@ -8,6 +8,10 @@ const INFO = {
 		based_on: "Basado en © 2023 Tharindu.dev. Todos los derechos reservados."
 	},
 
+	buttons: {
+		view_more: "Ver mas",
+	},
+
 	card_headers: {
 		works: "Trabajos",
 		studies: "Estudios",

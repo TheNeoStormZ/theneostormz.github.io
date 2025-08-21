@@ -15,6 +15,10 @@ const INFO = {
 
     },
 
+    buttons: {
+		view_more: "View more",
+	},
+
     card_headers: {
         works: "Work Experience", 
         studies: "Education",   

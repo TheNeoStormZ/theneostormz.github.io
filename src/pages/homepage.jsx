@@ -13,7 +13,8 @@ import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Studies from "../components/homepage/studies";
-import AllProjects from "../components/projects/allProjects";
+import LimitedProjects from "../components/projects/limitedProjects.jsx";
+import ContentDividerLoadmoreButton from "../components/ContentDividerLoadmoreButton.jsx"
 
 import SEO from "../data/seo";
 
@@ -210,7 +211,9 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<AllProjects />
+							<LimitedProjects maxProjects={3}/>
+						<ContentDividerLoadmoreButton/>
+
 						</div>
 						<div className="homepage-work">
 							<Works />
