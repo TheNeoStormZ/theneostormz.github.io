@@ -14,6 +14,7 @@ import translations from "../data/translations";
 
 import GradientText from "../components/animated/GradientText/GradientText";
 import DecryptedText from "../components/animated/DecryptedText/DecryptedText";
+import LogoLoopSetUp from "../components/LogoLoop/LogoLoopSetUp";
 
 const Projects = () => {
 	useEffect(() => {
@@ -67,16 +68,18 @@ const Projects = () => {
 						</div>
 
 						<div className="subtitle projects-subtitle">
-						<DecryptedText
-										text={INFO.projects_header.description}
-										speed={120}
-										maxIterations={20}
-										parentClassName="all-letters"
-										encryptedClassName="encrypted"
-										animateOn="view"
-										revealDirection="center"
-									/>	
-							
+							<DecryptedText
+								text={INFO.projects_header.description}
+								speed={120}
+								maxIterations={20}
+								parentClassName="all-letters"
+								encryptedClassName="encrypted"
+								animateOn="view"
+								revealDirection="center"
+							/>
+						</div>
+						<div style={{ paddingTop: 30 }}>
+							<LogoLoopSetUp />
 						</div>
 
 						<div className="projects-list">

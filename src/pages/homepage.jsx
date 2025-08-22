@@ -1,32 +1,33 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
 	faLinkedin,
 	faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
+import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
+import Logo from "../components/common/logo";
 import NavBar from "../components/common/navBar";
+import ContentDividerLoadmoreButton from "../components/ContentDividerLoadmoreButton.jsx";
 import Studies from "../components/homepage/studies";
 import LimitedProjects from "../components/projects/limitedProjects.jsx";
-import ContentDividerLoadmoreButton from "../components/ContentDividerLoadmoreButton.jsx"
 
 import SEO from "../data/seo";
 
-import LanguageContext from "../LanguageContext";
 import translations from "../data/translations";
+import LanguageContext from "../LanguageContext";
 
-import "./styles/homepage.css";
 import Works from "../components/homepage/work";
+import "./styles/homepage.css";
 
+import DecryptedText from "../components/animated/DecryptedText/DecryptedText.jsx";
 import RotatingText from "../components/animated/RotatingText/RotatingText.jsx";
 import SplitText from "../components/animated/SplitText/SplitText.jsx";
-import DecryptedText from "../components/animated/DecryptedText/DecryptedText.jsx";
+import LogoLoopSetUp from "../components/LogoLoop/LogoLoopSetUp.js";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -211,9 +212,10 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<LimitedProjects maxProjects={3}/>
-						<ContentDividerLoadmoreButton/>
+							<LimitedProjects maxProjects={3} />
+							<LogoLoopSetUp />
 
+							<ContentDividerLoadmoreButton />
 						</div>
 						<div className="homepage-work">
 							<Works />
