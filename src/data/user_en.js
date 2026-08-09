@@ -112,7 +112,7 @@ const INFO = {
             title: "Quipu",
             description:
                 "Quipu is a platform that helps writers organize and relate characters and stories, improving their productivity through an intuitive interface.",
-            logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+            logo: "https://cdn.worldvectorlogo.com/logos/create-react-app.svg",
             linkText: "View on GitHub",
             link: "https://github.com/TheNeoStormZ/quipu-writer",
         },

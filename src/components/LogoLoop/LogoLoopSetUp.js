@@ -12,7 +12,7 @@ const imageLogos = [
 		href: "",
 	},
 	{
-		src: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+		src: "https://cdn.worldvectorlogo.com/logos/create-react-app.svg",
 		alt: "ReactJS",
 		href: "",
 	},
